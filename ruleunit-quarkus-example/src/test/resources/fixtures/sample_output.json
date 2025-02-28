@@ -1,0 +1,572 @@
+[
+  {
+    "H1": "1",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 98.0
+  },
+  {
+    "H1": "1",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -34.0
+  },
+  {
+    "H1": "2",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -12.0
+  },
+  {
+    "H1": "2",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -85.0
+  },
+  {
+    "H1": "3",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 47.0
+  },
+  {
+    "H1": "3",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -19.0
+  },
+  {
+    "H1": "4",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 83.0
+  },
+  {
+    "H1": "4",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 43.0
+  },
+  {
+    "H1": "5",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -100.0
+  },
+  {
+    "H1": "5",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 0.0
+  },
+  {
+    "H1": "6",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 22.0
+  },
+  {
+    "H1": "6",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -85.0
+  },
+  {
+    "H1": "7",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -72.0
+  },
+  {
+    "H1": "7",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -58.0
+  },
+  {
+    "H1": "8",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -3.0
+  },
+  {
+    "H1": "8",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -100.0
+  },
+  {
+    "H1": "9",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 16.0
+  },
+  {
+    "H1": "9",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -8.0
+  },
+  {
+    "H1": "10",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 80.0
+  },
+  {
+    "H1": "10",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -78.0
+  },
+  {
+    "H1": "11",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -56.0
+  },
+  {
+    "H1": "11",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -32.0
+  },
+  {
+    "H1": "12",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -48.0
+  },
+  {
+    "H1": "12",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -86.0
+  },
+  {
+    "H1": "13",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -44.0
+  },
+  {
+    "H1": "13",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -98.0
+  },
+  {
+    "H1": "14",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 77.0
+  },
+  {
+    "H1": "14",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -65.0
+  },
+  {
+    "H1": "15",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 38.0
+  },
+  {
+    "H1": "15",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 98.0
+  },
+  {
+    "H1": "16",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 77.0
+  },
+  {
+    "H1": "16",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -58.0
+  },
+  {
+    "H1": "17",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -22.0
+  },
+  {
+    "H1": "17",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 66.0
+  },
+  {
+    "H1": "18",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 82.0
+  },
+  {
+    "H1": "18",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -50.0
+  },
+  {
+    "H1": "19",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -20.0
+  },
+  {
+    "H1": "19",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -50.0
+  },
+  {
+    "H1": "20",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 62.0
+  },
+  {
+    "H1": "20",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -53.0
+  },
+  {
+    "H1": "21",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -97.0
+  },
+  {
+    "H1": "21",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -46.0
+  },
+  {
+    "H1": "22",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 27.0
+  },
+  {
+    "H1": "22",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -69.0
+  },
+  {
+    "H1": "23",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -39.0
+  },
+  {
+    "H1": "23",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -94.0
+  },
+  {
+    "H1": "24",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -34.0
+  },
+  {
+    "H1": "24",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 77.0
+  },
+  {
+    "H1": "25",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -76.0
+  },
+  {
+    "H1": "25",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -61.0
+  },
+  {
+    "H1": "26",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -86.0
+  },
+  {
+    "H1": "26",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 93.0
+  },
+  {
+    "H1": "27",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 75.0
+  },
+  {
+    "H1": "27",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 8.0
+  },
+  {
+    "H1": "28",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -33.0
+  },
+  {
+    "H1": "28",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 79.0
+  },
+  {
+    "H1": "29",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -73.0
+  },
+  {
+    "H1": "29",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 85.0
+  },
+  {
+    "H1": "30",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 39.0
+  },
+  {
+    "H1": "30",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -51.0
+  },
+  {
+    "H1": "31",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 83.0
+  },
+  {
+    "H1": "31",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -14.0
+  },
+  {
+    "H1": "32",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -81.0
+  },
+  {
+    "H1": "32",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -4.0
+  },
+  {
+    "H1": "33",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -21.0
+  },
+  {
+    "H1": "33",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -92.0
+  },
+  {
+    "H1": "34",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -87.0
+  },
+  {
+    "H1": "34",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -71.0
+  },
+  {
+    "H1": "35",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -91.0
+  },
+  {
+    "H1": "35",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 57.0
+  },
+  {
+    "H1": "36",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 71.0
+  },
+  {
+    "H1": "36",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 68.0
+  },
+  {
+    "H1": "37",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -84.0
+  },
+  {
+    "H1": "37",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -88.0
+  },
+  {
+    "H1": "38",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -84.0
+  },
+  {
+    "H1": "38",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -47.0
+  },
+  {
+    "H1": "39",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -80.0
+  },
+  {
+    "H1": "39",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -33.0
+  },
+  {
+    "H1": "40",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -12.0
+  },
+  {
+    "H1": "40",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 2.0
+  },
+  {
+    "H1": "41",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -2.0
+  },
+  {
+    "H1": "41",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 92.0
+  },
+  {
+    "H1": "42",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 42.0
+  },
+  {
+    "H1": "42",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 66.0
+  },
+  {
+    "H1": "43",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -14.0
+  },
+  {
+    "H1": "43",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -92.0
+  },
+  {
+    "H1": "44",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 39.0
+  },
+  {
+    "H1": "44",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -40.0
+  },
+  {
+    "H1": "45",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -41.0
+  },
+  {
+    "H1": "45",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 58.0
+  },
+  {
+    "H1": "46",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -1.0
+  },
+  {
+    "H1": "46",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -59.0
+  },
+  {
+    "H1": "47",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 20.0
+  },
+  {
+    "H1": "47",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 48.0
+  },
+  {
+    "H1": "48",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 64.0
+  },
+  {
+    "H1": "48",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 86.0
+  },
+  {
+    "H1": "49",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -46.0
+  },
+  {
+    "H1": "49",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -46.0
+  },
+  {
+    "H1": "50",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 17.0
+  },
+  {
+    "H1": "50",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 94.0
+  },
+  {
+    "H1": "51",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 49.0
+  },
+  {
+    "H1": "51",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 46.0
+  },
+  {
+    "H1": "52",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -13.0
+  },
+  {
+    "H1": "52",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 62.0
+  },
+  {
+    "H1": "53",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -19.0
+  },
+  {
+    "H1": "53",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 85.0
+  },
+  {
+    "H1": "54",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -98.0
+  },
+  {
+    "H1": "54",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 53.0
+  },
+  {
+    "H1": "55",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -60.0
+  },
+  {
+    "H1": "55",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -24.0
+  },
+  {
+    "H1": "56",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 4.0
+  },
+  {
+    "H1": "56",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 48.0
+  },
+  {
+    "H1": "57",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": -24.0
+  },
+  {
+    "H1": "57",
+    "PROTOCOL": "WARTSILA / OPC-UA",
+    "value": 92.0
+  }
+]

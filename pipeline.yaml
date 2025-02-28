@@ -1,0 +1,58 @@
+trigger:
+  - java  # Sostituisci 'main' con il nome del tuo branch principale
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+  - job: BuildAndPackage
+    displayName: 'Build and Package Quarkus Application'
+    steps:
+
+      - bash: |
+          export AWS_ACCESS_KEY_ID=""
+          export AWS_SECRET_ACCESS_KEY=""
+          aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin xxx.dkr.ecr.eu-central-1.amazonaws.com
+        displayName: 'AWS LOGIN INT'
+
+      - task: JavaToolInstaller@0
+        inputs:
+          versionSpec: '21'  # Puoi impostare la versione Java richiesta
+          addToPath: true
+          jdkArchitectureOption: 'x64'
+          jdkSourceOption: 'PreInstalled'
+
+      - script: |
+          ./mvnw install -Dnative -DskipITs=true -Dquarkus.native.container-build=true -Dquarkus.native.container-runtime=docker
+        displayName: 'Build Quarkus Application'
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: '**/TEST-*.xml'
+
+      - task: Docker@2
+        displayName: 'Build image INT'
+        inputs:
+          repository: 'xxx.dkr.ecr.eu-central-1.amazonaws.com/quarkus-ruleunit-runner'
+          command: build
+          Dockerfile: 'ruleunit-quarkus-example/src/main/docker/Dockerfile.distroless'
+          buildContext: ruleunit-quarkus-example
+          tags: '3.0.5-SNAPSHOT'
+
+      - task: AmazonWebServices.aws-vsts-tools.ECRPushImage.ECRPushImage@1
+        displayName: 'AWS Push Image INT'
+        inputs:
+          awsCredentials: 'AWS INT ServiceConnection'
+          regionName: 'eu-central-1'
+          sourceImageName: 'xxx.dkr.ecr.eu-central-1.amazonaws.com/quarkus-ruleunit-runner'
+          sourceImageTag: '3.0.5-SNAPSHOT'
+          repositoryName: 'quarkus-ruleunit-runner'
+          pushTag: '3.0.5-SNAPSHOT'
+          autoCreateRepository: true
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathtoPublish: '$(Build.ArtifactStagingDirectory)'  # Sostituisci con il percorso dei tuoi artefatti
+          artifactName: 'drop'
+          publishLocation: 'Container'
+        displayName: 'Publish Artifacts'

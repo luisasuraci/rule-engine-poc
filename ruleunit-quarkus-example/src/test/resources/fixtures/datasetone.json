@@ -1,0 +1,32 @@
+{
+  "signals": [
+    {
+      "automation": "WARTSILA / OPC-UA",
+      "mId": "10037",
+      "assistModuleCode": "3",
+      "ioSystem": "2",
+      "systemCode": "FRESH COOLING WATER - LOW TEMPERATURE",
+      "hwSl": "HW",
+      "deviceTag": "XT02014A.1",
+      "description": "LT FW COOLER XA/062A OUT TEMP",
+      "pieceNumber": "XM/274A-IC",
+      "unit": "°C",
+      "protocol": "",
+      "value": -1
+    },
+    {
+      "automation": "WARTSILA / OPC-UA",
+      "mId": "10037",
+      "assistModuleCode": "3",
+      "ioSystem": "2",
+      "systemCode": "FRESH COOLING WATER - LOW TEMPERATURE",
+      "hwSl": "HW",
+      "deviceTag": "XT02014A.1",
+      "description": "LT FW COOLER XA/062A OUT TEMP",
+      "pieceNumber": "XM/274A-IC",
+      "unit": "°C",
+      "protocol": "",
+      "value": 333
+    }
+  ]
+}
