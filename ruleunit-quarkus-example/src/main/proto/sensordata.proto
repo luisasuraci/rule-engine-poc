@@ -1,0 +1,54 @@
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.acn.poc.grpc";
+option java_outer_classname = "SensorDataProto";
+option java_generate_equals_and_hash = true;
+
+package com.acn.poc.sensordata;
+
+message Signal {
+  string deviceTag = 1;
+  float value = 2;
+  string automation = 3;
+  string mId = 4;
+  string assistModuleCode = 5;
+  string ioSystem = 6;
+  string systemCode = 7;
+  string hwSl = 8;
+  string description = 9;
+  string pieceNumber = 10;
+  string unit = 11;
+}
+
+enum AlertType {
+  TEMPERATURE = 0;
+  LUBRICATING_OIL = 1;
+  FUEL_OIL = 2;
+  EXHAUST_GAS = 3;
+  PROPULSION_SYSTEM = 4;
+  STABILIZERS = 5;
+}
+
+message SignalOutput {
+  AlertType alertType = 1;
+  Signal signal = 2;
+}
+
+message SensorRequest {
+  repeated Signal signals = 1;
+}
+
+message SensorResponse {
+  string alert = 1;
+}
+
+service SensorService {
+  rpc GetSensorData(SensorRequest) returns (SensorResponse);
+  rpc ApplyRules(SensorRequest) returns (RuleEngineResponse);
+}
+
+message RuleEngineResponse {
+  repeated SignalOutput signals = 1;  // Restituisce solo i segnali che rispettano le regole
+}
