@@ -18,15 +18,11 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-rest-jackson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-rest</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-arc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-grpc</artifactId>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -36,14 +32,16 @@
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-drools</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.kie.kogito/kogito-spring-boot-starter -->
+        <dependency>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-spring-boot-starter</artifactId>
+            <version>1.44.1.Final</version>
+        </dependency>
+
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-junit5</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>

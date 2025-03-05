@@ -2,9 +2,9 @@ package com.acn.poc.sensordata;
 unit SensorUnit;
 
 import org.jboss.logging.Logger
-import com.acn.poc.dto.SignalOutput;
-import com.acn.poc.dto.Signal
-import com.acn.poc.dto.AlertType;
+import com.acn.poc.grpc.Signal;
+import com.acn.poc.grpc.SignalOutput;
+import com.acn.poc.grpc.AlertType;
 
 //rules
 rule CoolingTemperature
@@ -15,175 +15,275 @@ when
                         deviceTag == "XT02014C.1" ||
                         deviceTag == "XT02014D.1" )]
 then
-    alerts.add(new SignalOutput(AlertType.TEMPERATURE , $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+        .setAlertType(AlertType.TEMPERATURE)
+        .setSignal($data)
+        .build();
+    alerts.add(signalOutput);
 end
 
 rule CoolingPression
 when
     $data : /signals[(value < 0 || value > 10) && (deviceTag == "PT02019.1" || deviceTag == "PT02022.1" )]
 then
-    alerts.add(new SignalOutput(AlertType.TEMPERATURE , $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+        .setAlertType(AlertType.TEMPERATURE)
+        .setSignal($data)
+        .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_TT05018-7P.1"
 when
     $data : /signals[(value < 0 || value > 250) && (deviceTag == "TT05018-7P.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+        .setAlertType(AlertType.LUBRICATING_OIL)
+        .setSignal($data)
+        .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_LT05006_05P.1"
 when
     $data : /signals[(value < 0 || value > 9.1) && (deviceTag == "LT05006_05P.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+        .setAlertType(AlertType.LUBRICATING_OIL)
+        .setSignal($data)
+        .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_LT05006_05S.1"
 when
     $data : /signals[(value < 0 || value > 7.4) && (deviceTag == "LT05006_05S.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+            .setAlertType(AlertType.LUBRICATING_OIL)
+            .setSignal($data)
+            .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_LT05006_06P.1"
 when
     $data : /signals[(value < 0 || value > 7.4) && (deviceTag == "LT05006_06P.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+            .setAlertType(AlertType.LUBRICATING_OIL)
+            .setSignal($data)
+            .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_LT05006_06S.1"
 when
     $data : /signals[(value < 0 || value > 8.9) && (deviceTag == "LT05006_06S.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+            .setAlertType(AlertType.LUBRICATING_OIL)
+            .setSignal($data)
+            .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_LT05007_07P.1"
 when
     $data : /signals[(value < 0 || value > 24) && (deviceTag == "LT05007_07P.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+            .setAlertType(AlertType.LUBRICATING_OIL)
+            .setSignal($data)
+            .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_LT05009_08P.1"
 when
     $data : /signals[(value < 0 || value > 34.3) && (deviceTag == "LT05009_08P.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+            .setAlertType(AlertType.LUBRICATING_OIL)
+            .setSignal($data)
+            .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_LT05011_07P.1"
 when
     $data : /signals[(value < 0 || value > 12) && (deviceTag == "LT05011_07P.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+            .setAlertType(AlertType.LUBRICATING_OIL)
+            .setSignal($data)
+            .build();
+    alerts.add(signalOutput);
 end
 
 rule "Lubricating_FT05012-109.1"
 when
     $data : /signals[(value < 0 || value > 50) && (deviceTag == "FT05012-109.1")]
 then
-    alerts.add(new SignalOutput(AlertType.LUBRICATING_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+            .setAlertType(AlertType.LUBRICATING_OIL)
+            .setSignal($data)
+            .build();
+    alerts.add(signalOutput);
 end
 
 rule "FuelOil_TT06016"
 when
     $data : /signals[(value < 0 || value > 250) && (deviceTag == "TT06016-04P.1" || deviceTag == "TT06016-07S.1")]
 then
-    alerts.add(new SignalOutput(AlertType.FUEL_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+            .setAlertType(AlertType.FUEL_OIL)
+            .setSignal($data)
+            .build();
+    alerts.add(signalOutput);
 end
 
 rule "FuelOil_XT06072"
 when
     $data : /signals[(value < 0 || value > 8.5) && (deviceTag == "XT06072A.1" || deviceTag == "XT06072B.1")]
 then
-    alerts.add(new SignalOutput(AlertType.FUEL_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                .setAlertType(AlertType.FUEL_OIL)
+                .setSignal($data)
+                .build();
+    alerts.add(signalOutput);
 end
 
 rule "FuelOil_XT06067"
 when
     $data : /signals[(value < 0 || value > 2000) && (deviceTag == "XT06067-177.1" || deviceTag == "XT06067-183.1" || deviceTag == "XT06067-185.1" || deviceTag == "XT06067-187.1")]
 then
-    alerts.add(new SignalOutput(AlertType.FUEL_OIL, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                .setAlertType(AlertType.FUEL_OIL)
+                .setSignal($data)
+                .build();
+    alerts.add(signalOutput);
 end
 
 rule "ExaustGas_XT08005"
 when
     $data : /signals[(value < 0 || value > 500) && (deviceTag == "XT08005AB.1" || deviceTag == "XT08005BB.1" || deviceTag == "XT08005CB.1" || deviceTag == "XT08005DB.1" || deviceTag == "XT08006AB.1" || deviceTag == "XT08006BB.1" || deviceTag == "XT08006CB.1" || deviceTag == "XT08006DB.1")]
 then
-    alerts.add(new SignalOutput(AlertType.EXHAUST_GAS, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                .setAlertType(AlertType.EXHAUST_GAS)
+                .setSignal($data)
+                .build();
+    alerts.add(signalOutput);
 end
 
 rule "ExaustGas_XT08022"
 when
     $data : /signals[(value < 0 || value > 100) && (deviceTag == "XT08022B.1" || deviceTag == "XT08022A.1")]
 then
-    alerts.add(new SignalOutput(AlertType.EXHAUST_GAS, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                    .setAlertType(AlertType.EXHAUST_GAS)
+                    .setSignal($data)
+                    .build();
+    alerts.add(signalOutput);
 end
 
 rule "ExaustGas_XT08089"
 when
     $data : /signals[(value < 150 || value > 1150) && (deviceTag == "XT08089_01.1" || deviceTag == "XT08089_02.1" || deviceTag == "XT08089_03.1" || deviceTag == "XT08089_04.1")]
 then
-    alerts.add(new SignalOutput(AlertType.EXHAUST_GAS, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                    .setAlertType(AlertType.EXHAUST_GAS)
+                    .setSignal($data)
+                    .build();
+    alerts.add(signalOutput);
 end
 
 rule "ExaustGas_XT08090"
 when
     $data : /signals[(value < -40 || value > 210) && (deviceTag == "XT08090_01.1" || deviceTag == "XT08090_02.1" || deviceTag == "XT08090_03.1" || deviceTag == "XT08090_04.1")]
 then
-    alerts.add(new SignalOutput(AlertType.EXHAUST_GAS, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                    .setAlertType(AlertType.EXHAUST_GAS)
+                    .setSignal($data)
+                    .build();
+    alerts.add(signalOutput);
 end
 
 rule "Propulsion_XT31037"
 when
     $data : /signals[(value < 0 || value > 10000) && (deviceTag == "XT31037A.1" || deviceTag == "XT31037B.1")]
 then
-    alerts.add(new SignalOutput(AlertType.PROPULSION_SYSTEM, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                    .setAlertType(AlertType.PROPULSION_SYSTEM)
+                    .setSignal($data)
+                    .build();
+    alerts.add(signalOutput);
 end
 
 rule "Propulsion_XT31036"
 when
     $data : /signals[(value < -180 || value > 180) && (deviceTag == "XT31036A.1" || deviceTag == "XT31036B.1")]
 then
-    alerts.add(new SignalOutput(AlertType.PROPULSION_SYSTEM, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                        .setAlertType(AlertType.PROPULSION_SYSTEM)
+                        .setSignal($data)
+                        .build();
+    alerts.add(signalOutput);
 end
 
 rule "Propulsion_XT31038"
 when
     $data : /signals[(value < -100 || value > 100) && (deviceTag == "XT31038A.1" || deviceTag == "XT31038B.1")]
 then
-    alerts.add(new SignalOutput(AlertType.PROPULSION_SYSTEM, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                        .setAlertType(AlertType.PROPULSION_SYSTEM)
+                        .setSignal($data)
+                        .build();
+    alerts.add(signalOutput);
 end
 
 rule "Propulsion_XT31039"
 when
     $data : /signals[(value < -100 || value > 100) && (deviceTag == "XT31039A.1" || deviceTag == "XT31039B.1")]
 then
-    alerts.add(new SignalOutput(AlertType.PROPULSION_SYSTEM, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                        .setAlertType(AlertType.PROPULSION_SYSTEM)
+                        .setSignal($data)
+                        .build();
+    alerts.add(signalOutput);
 end
 
 rule "Propulsion_XT31075"
 when
     $data : /signals[(value < -180 || value > 180) && (deviceTag == "XT31075A.1" || deviceTag == "XT31075B.1")]
 then
-    alerts.add(new SignalOutput(AlertType.PROPULSION_SYSTEM, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                        .setAlertType(AlertType.PROPULSION_SYSTEM)
+                        .setSignal($data)
+                        .build();
+    alerts.add(signalOutput);
 end
 
 rule "Propulsion_XT31076"
 when
     $data : /signals[(value < -180 || value > 180) && (deviceTag == "XT31076A.1" || deviceTag == "XT31076B.1")]
 then
-    alerts.add(new SignalOutput(AlertType.PROPULSION_SYSTEM, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                        .setAlertType(AlertType.PROPULSION_SYSTEM)
+                        .setSignal($data)
+                        .build();
+    alerts.add(signalOutput);
 end
 
 rule "Stabilizer_XT70010"
 when
     $data : /signals[(value < -25 || value > 25) && (deviceTag == "XT70010A.1" || deviceTag == "XT70010B.1")]
 then
-    alerts.add(new SignalOutput(AlertType.STABILIZERS, $data));
+    SignalOutput signalOutput = SignalOutput.newBuilder()
+                        .setAlertType(AlertType.STABILIZERS)
+                        .setSignal($data)
+                        .build();
+    alerts.add(signalOutput);
 end
 
 query SensorData
